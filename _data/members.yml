@@ -43,7 +43,7 @@ frances:
 david_r: 
   full_name: David Rickards (Webmaster)
   linkedin: 
-  profile: assets/images/profiles/david_r.jpg
+  profile: assets/images/profiles/david_rickards.jpg
   bio: Hi, my name is David! I am a senior at UH Manoa majoring in Computer Science. I am interested in software engineering and cybersecurity. Outside of school, I enjoy going to the beach, hiking, and gaming.
   subject: Web Dev, Cybersecurity
 
@@ -134,7 +134,7 @@ ruadhán:
 katelyn: 
   full_name: Katelyn Sung
   linkedin:
-  profile: assets/images/profiles/katelyn_sung.jpg
+  profile: assets/images/profiles/katelyn_s.jpg
   bio: Hi I'm Katelyn I'm a CCM Major. I'm intersted in creating websites, video games and just creative media production in fashion! super excited to learn and join ICSpark!
   subject: Web Dev
 
