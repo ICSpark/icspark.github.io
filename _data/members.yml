@@ -89,6 +89,13 @@ coleman:
   bio: Hello, my name is Coleman Lau! I am a freshman majoring in Computer Science. During my free time I enjoy playing video games, listening to music, and playing tennis. I look forward to working with you all!
   subject: Web Dev
 
+shane: 
+  full_name: Shane Cacal-Tafao
+  linkedin:
+  profile:  assets/images/profiles/shane_cacal-tafao.jpg
+  bio: Hey, I'm Shane and I'm actually majoring in Mechanical Engineering. Despite that, computer science is still one of my passions, as I've been coding since elementary. Beyond that, I love playing guitar, photography, playing games, and, when I feel like it, hiking.
+  subject: Web Dev
+
 dominic: 
   full_name: Dominic Lau
   linkedin:
@@ -120,15 +127,8 @@ lukas:
 ruadhán: 
   full_name: Ruadhán (Rowen) Buddenhagen
   linkedin:
-  profile: assets/images/profiles/rowen_buddenhagen
+  profile: assets/images/profiles/rowen_buddenhagen.jpg
   bio: Aloha all. I am currently an MEd student in the college of education. I am a language teacher, and an editor, and I'm excited to learn a little bit of coding along with you all. My favorite color is orange, and my favoirte animal is the octopus. Let's get to learning!
-  subject: Web Dev
-
-shane: 
-  full_name: Shane Cacal-Tafao
-  linkedin:
-  profile:  assets/images/profiles/shane_cacal-tafao
-  bio: Hey, I'm Shane and I'm actually majoring in Mechanical Engineering. Despite that, computer science is still one of my passions, as I've been coding since elementary. Beyond that, I love playing guitar, photography, playing games, and, when I feel like it, hiking.
   subject: Web Dev
 
 katelyn: 
