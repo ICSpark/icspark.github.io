@@ -20,6 +20,13 @@ Miku:
   link: https://icspark.github.io/2024_Miku_Music-Concert-Project/
   img: assets/images/projects/2024/Miku.png
 
+Keani:
+  name: Keani's Taxes With Totoro
+  class: Intro to Web Dev (Spring 2024)
+  bio: If you wanted to learn how to do your taxes, but needed a friend to help guide you, then Keani's Basic Taxes With Totoro is just what you need!
+  link: https://641b22e9-6805-4779-96f8-66e788c6d990-00-2kcqgxklpqyvn.picard.replit.dev/start-screen/
+  img: assets/images/projects/2024/Keani.png
+
 lauren:
   name: Lauren's Interactive Storybook
   class: Intro to Web Dev (Spring 2022)
