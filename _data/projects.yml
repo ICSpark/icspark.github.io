@@ -1,21 +1,21 @@
 Emie:
   name: Emie's Interactive Solar System
   class: Intro to Web Dev (Spring 2024)
-  bio: Do you want explore our solar system and learn about each planet? Then check out Emi's fun interactive website were you'll learn loads fo fun fact.              
+  bio: Do you want explore our solar system and learn about each planet? Then check out Emi's fun interactive website where you'll learn loads of fun facts.              
   link: https://icspark.github.io/2024_Emie_Our-Solar-System-/
   img: assets/images/projects/2024/Emie.png
 
 Kiyoshi:
   name: Kiyoshi's Snake Game
   class: Intro to Web Dev (Spring 2024)
-  bio: Come play Kiyoshi remake of the classic snake game. See how long you can survive or challenge friends to see who can get the highest score!
+  bio: Come play Kiyoshi's remake of the classic snake game. See how long you can survive or challenge friends to see who can get the highest score!
   link: https://icspark.github.io/2024_Kiyoshi_Snake-Game/
   img: assets/images/projects/2024/Kiyoshi.png
 
 Miku:
   name: Miku's Music Selector
   class: Intro to Web Dev (Spring 2024)
-  bio: Getting board of hearing the same songs over and over again? Don't worry! You can discover new songs from other countries with Miku's 
+  bio: Getting bored of hearing the same songs over and over again? Don't worry! You can discover new songs from other countries with Miku's 
                 Music Selector where you are sure to find your next new favorite.
   link: https://icspark.github.io/2024_Miku_Music-Concert-Project/
   img: assets/images/projects/2024/Miku.png
