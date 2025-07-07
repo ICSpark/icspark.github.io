@@ -1,3 +1,31 @@
+Maliha:
+  name: Maliha's Mine Hopper
+  class: Intro to Web Dev (Spring 2025)
+  bio: Test your knowledge with Maliha's trivia game about movies, games, and TV.
+  link: https://malihazainab.github.io/Final-project---Maliha/
+  img: assets/images/projects/2025/Maliha.png
+
+Liam:
+  name: Liam's Video Player
+  class: Intro to Web Dev (Spring 2025)
+  bio: Search, explore, and watch countless videos with a video player website created by Liam.
+  link: https://vinthros.github.io/finalproject/
+  img: assets/images/projects/2025/Liam.png
+
+Kathrylle:
+  name: Kathrylle's Coffee Maker
+  class: Intro to Web Dev (S`pring 2025)
+  bio: Unsure of what to make in the morning? Mix up the levels of ingredients to create a new cup of coffee to try.
+  link: https://kathryller.github.io/ICSpark-Final-Project/
+  img: assets/images/projects/2025/Kathrylle.png
+
+Deetrik:
+  name: Deetrik's Blaster Game
+  class: Intro to Web Dev (Spring 2025)
+  bio: Have some fun with Deetrik's Space Blaster web game! See how long you can survivie.
+  link: https://any-username-taken.github.io/Final-project/
+  img: assets/images/projects/2025/Deetrik.png
+
 Emie:
   name: Emie's Interactive Solar System
   class: Intro to Web Dev (Spring 2024)
