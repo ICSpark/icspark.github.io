@@ -177,3 +177,69 @@ michael:
   role: Mentor, Lecturer
   start: "2020"
   end: "2024"
+
+jordan:
+  name: Jordan Le
+  role: Mentor
+  start: "2022"
+  end: "2024"
+  
+seri:
+  name: Seri Nakamura
+  role: Mentor
+  start: "2022"
+  end: "2024"
+
+sydnee:
+  name: Sydnee You
+  role: Mentor, Secretary
+  start: "2022"
+  end: "2025"
+
+frances:
+  name: Frances Uy
+  role: Mentor, Lecturer
+  start: "2024"
+  end: "2025"
+
+kristine:
+  name: Kristine Orpilla
+  role: Mentor, Marketing
+  start: "2023"
+  end: "2025"
+
+cade:
+  name: Cade Kane
+  role: Mentor, Treasurer
+  start: "2023"
+  end: "2025"
+  
+jiawen:
+  name: Jiawen Chen
+  role: Mentor
+  start: "2024"
+  end: "2025"
+  
+xavier:
+  name: Xavier Burt
+  role: Mentor
+  start: "2023"
+  end: "2025"
+  
+ruadhán:
+  name: Ruadhán Buddenhagen
+  role: Mentor
+  start: "2024"
+  end: "2025"
+
+emmett:
+  name: Emmett Lau
+  role: Mentor
+  start: "2024"
+  end: "2025"
+
+luke:
+  name: Luke Pagtulingan
+  role: Mentor
+  start: "2024"
+  end: "2025"
