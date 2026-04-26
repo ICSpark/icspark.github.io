@@ -18,13 +18,13 @@ li { font-family: "Archivo Narrow", sans-serif; }
 
 a { text-decoration: none; font-family: "Open Sans", sans-serif; letter-spacing: 1px; color: white; font-size: 16px; font-weight: 350; }
 
-a:hover { color: #DF4C1E; }
+a:hover { color: #ffffff; }
 
 body { padding: 0; margin: 0; }
 
 button { padding: 10px; background-color: #e04c1e; color: white; border-radius: 10px; letter-spacing: 1px; font-family: "Roboto Condensed", sans-serif; }
 
-button:hover { box-shadow: 0 1px 3px #fffced, 0 1px 2px rgba(0, 0, 0, 0.24); }
+button:hover { box-shadow: 0 1px 3px #fffced, 0 1px 2px rgba(0, 0, 0, 0.24); background-color: #c9441b; }
 
 button:focus { outline: 0; }
 
