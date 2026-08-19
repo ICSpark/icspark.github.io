@@ -1,0 +1,48 @@
+version: 2
+updates:
+    - package-ecosystem: "bundler"
+      directory: "/"
+      schedule:
+        interval: "weekly"
+        day: "monday"
+        time: "09:00"
+        timezone: "UTC"
+      open-pull-requests-limit: 10
+      groups:
+        # only minor/patch updates
+        all:
+          patterns:
+            - "*"
+          update-types:
+            - "minor"
+            - "patch"
+      # Ignore any breaking changes
+      ignore:
+        - dependency-name: "*"
+          update-types:
+            - "version-update:semver-major"
+
+  # CI
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 10
+    commit-message:
+      prefix: "ci(deps)"
+    groups:
+      # only minor/patch updates
+      github-actions:
+        patterns:
+          - "*"
+        update-types:
+          - "minor"
+          - "patch"
+    # Ignore any breaking changes
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
