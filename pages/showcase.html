@@ -1,0 +1,54 @@
+---
+layout: default
+title: Showcase
+permalink: /showcase.html
+---
+
+<!-- Showcase page content section. -->
+<section id="showcase-main">
+    <div class="page-image">
+      <img src="../assets/images/people/people.png" alt="">
+    </div>
+    <div class="page-title">
+      <h4>FINAL PROJECT SHOWCASE</h4>
+      <p>Students were instructed to submit a final project at the end of the course. It could be a completed assigned project, or a totally new creation of their own.
+       Mentors provided comments for each submission for improvement, but was overall surprised with the effort that students put into their projects despite the challenges that COVID-19 brought this
+       semester. Great job, young coders!</p>
+    </div>
+    <div class="page-title">
+      <h4>FEATURED PROJECTS</h4>
+      <p>We thought that several projects went beyond our expectations due to originality and creativity, thoughtfulness, and overall effort and time spent on the project.
+         Check out their final projects by clicking on the images!</p>
+    </div>
+    <div id="featured">
+      {% for project in site.data.projects %}
+        <div id="featured-project-container">
+          <div class="featured-project">
+            <a target="blank" href="{{project[1].link}}"><img class="project-img" src="{{ project[1].img }}" alt="project-image"></a>
+            <div class="featured-project-info">
+              <h4>{{project[1].name}}</h4>
+              <p>Class: {{project[1].class}}</p>
+              <p> {{project[1].bio}} </p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="page-title">
+      <h4>SPRING 2021 FINAL PROJECTS</h4>
+      <p>Check out these other projects! Great start and our mentors are looking forward to its continued development.
+      We particularly enjoyed the creative touch that several students added to their projects.</p>
+    </div>
+    <div id="final-projects">
+      <div id="final-projects-container">
+        {% for p in site.data.projects_2021 %}
+          <a target="_blank" href="{{p[1].link}}">
+            <img class="project-img" src="{{p[1].img}}" alt="">
+            <div class="info-hover">
+              <h5>{{p[1].name}}</h5>
+            </div>
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>

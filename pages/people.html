@@ -1,0 +1,91 @@
+---
+layout: default
+title: People
+permalink: /people.html
+---
+ <!-- Program page content section. -->
+ <section id="people-main">
+  <div class="page-image">
+    <img src="../assets/images/people/people.png" alt="">
+  </div>
+  <div class="page-title">
+    <h4>PEOPLE</h4>
+    <p>Our mentors, volunteers, and advisors are excited to provide 6th - 12th graders with an
+      opportunity to start coding at a young age. We hope to nurture a fun,
+      nonintimidating educational environment to allow any student from any background to enjoy
+      learning to code. A big thank you to our advisor <strong style="font-family: sans-serif;">Charles "Charlie" Shackford</strong>, the ICS department chair <strong
+          style="font-family: sans-serif;">Dr. Scott Robertson</strong>, Associate Faculty
+      Specialist <strong style="font-family: sans-serif;">Kenny Quibilan</strong>, and IT System
+      Administrator <strong style="font-family: sans-serif;">Todd Tomita</strong>
+      for their support to make this program possible.</p>
+  </div>
+  <div id="people-content">
+    <div class="profile-section">
+      <div class="profile-title">
+        <h4>MENTORS</h4>
+      </div>
+      <div class="profiles">
+        {% for member in site.data.members %}
+        <div class="profile">
+          <div class="profile-text">
+            <h4>{{ member[1].full_name }}</h4>
+            <h6>Subjects: {{ member[1].subject }}</h6>
+            <p>{{ member[1].bio }}</p>
+          </div>
+          <img src="{{ member[1].profile }}" alt="">
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="profile-section">
+  <div class="profile-title">
+    <h4>ALUMNIS</h4>
+  </div>
+  <div class="profiles">
+    <div class="profile">
+      <div class="profile-text">
+        {% assign possibleYears = "2020,2021,2022" | split: ',' %}
+        {% for year in possibleYears %}
+          <h4>{{ year }}</h4>
+          {% for alumni in site.data.alumnis %}
+            {% if alumni[1].end == year %}
+              <h4>{{alumni[1].name}}</h4>
+              <h5>{{alumni[1].role}}</h5>
+              <h5>{{alumni[1].start}} - {{alumni[1].end}}</h5>
+            {% endif %}
+          {% endfor %}
+        {% endfor %}
+    </div>
+  </div>
+</div> -->
+
+<section id="alumni-main">
+  <div id="alumni-content">
+      <div class="alumni-section">
+        <div class="alumni-title">
+          <h4>ALUMNI</h4>
+        </div>
+        {% assign possibleYears = "2025,2024,2023,2022,2021,2020" | split: ',' %}
+            {% for year in possibleYears %}
+              <h4>{{ year }}</h4>
+              <div class="alumnis">
+                <div class="alumni">
+                  {% for alumni in site.data.alumnis %}
+                  {% if alumni[1].end == year %}
+                    <div>
+                      <h5>{{alumni[1].name}}</h5>
+                      <p>{{alumni[1].role}}</p>
+                      <p>{{alumni[1].start}} - {{alumni[1].end}}</p>
+                    </div>
+                  {% endif %}
+                {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+      </div>
+  </div>
+</section>
+
