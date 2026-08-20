@@ -18,6 +18,8 @@ concurrency:
 
 jobs:
   build:
+    # don't run if dependabot - handled in own workflow
+    if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-24.04
 
     steps:
