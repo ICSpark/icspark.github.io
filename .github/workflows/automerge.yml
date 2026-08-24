@@ -1,18 +1,70 @@
 name: Dependabot auto-merge
-
 on: pull_request_target
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
+  build:
+    runs-on: ubuntu-24.04
+    if: github.actor == 'dependabot[bot]'
+    permissions:
+      contents: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3'
+          bundler-cache: true
+
+      # fails on build errors
+      - name: Build site
+        run: |
+          bundle exec jekyll build \
+          --strict_front_matter \
+          --future \
+          --destination _site \
+          --baseurl "${{ steps.pages.outputs.base_path }}"
+        env:
+          JEKYLL_ENV: production
+
+  scan:
+    runs-on: ubuntu-24.04
+    if: github.actor == 'dependabot[bot]'
+    permissions:
+      contents: read
+      security-events: write
+      actions: read
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Scan using grype
+        id: scan
+        uses: anchore/scan-action@v7.4.0
+        with:
+          path: "."
+          by-cve: true
+          output-format: sarif
+
+      - name: Upload SARIF report
+        if: always()
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: ${{ steps.scan.outputs.sarif }}
+
   automerge:
     runs-on: ubuntu-24.04
     if: github.actor == 'dependabot[bot]'
+    needs:
+      - build
+      - scan
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: fastify/github-action-merge-dependabot@v3
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          target: minor
-          use-github-auto-merge: true
